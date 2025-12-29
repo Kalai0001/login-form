@@ -1,4 +1,4 @@
-#box{
+#box {
     height: 400px;
     width: 25%;
     min-width: 320px;
@@ -9,23 +9,29 @@
     margin-right: auto;
     margin-top: 15%;
     background: linear-gradient(135deg, #d4fcff, #c8e7ff);
+    padding: 20px; /* Added padding for better spacing */
+    box-sizing: border-box;
 }
 
-#Login{
+#Login {
     text-align: center;
     color: rgb(56, 53, 53);
     font-style: italic;
     font-size: 35px;
+    margin-bottom: 20px; /* Added bottom margin */
 }
 
-#a{
+#a {
     text-align: center;
+    padding: 0 20px; /* Added horizontal padding */
 }
-#a1{
+
+#a1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
 }
-#username{
+
+#username {
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 35px;
@@ -36,15 +42,18 @@
     margin-top: 10px;
 }
 
-#b{
+#b {
     text-align: center;
     margin-top: 20px;
+    padding: 0 20px; /* Added horizontal padding */
 }
-#b1{
+
+#b1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
 }
-#password{
+
+#password {
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 35px;
@@ -55,12 +64,13 @@
     margin-top: 10px;
 }
 
-#c{
+#c {
     text-align: center;
     margin-top: 40px;
+    padding: 0 20px; /* Added horizontal padding */
 }
 
-#c1{
+#c1 {
     height: 40px;
     width: 120px;
     background-color: black;
@@ -68,6 +78,7 @@
     border: 2px solid black;
     border-radius: 5px;
     font-size: 30px;
+    cursor: pointer;
 }
 
 /* 📱 Mobile responsiveness */
@@ -76,6 +87,7 @@
         width: 90%;
         height: auto;
         margin-top: 20%;
+        padding: 15px; /* Reduced padding on mobile */
     }
 
     #Login {
@@ -88,13 +100,22 @@
 
     #username, #password {
         width: 90%;
+        max-width: 280px; /* Added max-width to prevent overflow */
     }
 
     #c1 {
-        width: 70%;
+        width: 60%; /* Reduced from 70% to 60% for better spacing */
+        max-width: 200px; /* Added max-width for better control */
         font-size: 26px;
+        margin: 0 auto; /* Center the button */
+    }
+
+    #a, #b, #c {
+        padding: 0 10px; /* Reduced padding on mobile */
     }
 }
+
+
 
 
 
