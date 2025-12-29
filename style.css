@@ -1,19 +1,23 @@
 #box{
     height: 400px;
     width: 25%;
+    min-width: 320px;
+    max-width: 450px;
     border: 2px solid black;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15%;
-    background-color: rgb(205, 168, 216);
+    background: linear-gradient(135deg, #d4fcff, #c8e7ff);
 }
+
 #Login{
     text-align: center;
     color: rgb(56, 53, 53);
     font-style: italic;
     font-size: 35px;
 }
+
 #a{
     text-align: center;
 }
@@ -30,9 +34,7 @@
     border-radius: 5px;
     text-align: center;
     margin-top: 10px;
-   
 }
-
 
 #b{
     text-align: center;
@@ -53,7 +55,6 @@
     margin-top: 10px;
 }
 
-
 #c{
     text-align: center;
     margin-top: 40px;
@@ -68,3 +69,31 @@
     border-radius: 5px;
     font-size: 30px;
 }
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+    #box {
+        width: 90%;
+        height: auto;
+        margin-top: 20%;
+    }
+
+    #Login {
+        font-size: 30px;
+    }
+
+    #a1, #b1 {
+        font-size: 26px;
+    }
+
+    #username, #password {
+        width: 90%;
+    }
+
+    #c1 {
+        width: 70%;
+        font-size: 26px;
+    }
+}
+
+
